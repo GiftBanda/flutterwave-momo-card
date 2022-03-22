@@ -19,6 +19,7 @@ const mobilePayment = async (req, res) => {
 
        const payload = req.body
        const response =  await flw.MobileMoney.zambia(payload)
+       open(response.meta.authorization.redirect)
        res.status(200).json(response)
     } catch (error) {
         console.log(error)
