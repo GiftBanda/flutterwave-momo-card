@@ -29,17 +29,17 @@ const mobilePayment = async (req, res) => {
 const cardPayment = async (req, res) => {
     const payload = {
         "card_number": "5531886652142950",
-        "cvv": "564",
-        "expiry_month": "09",
-        "expiry_year": "21",
-        "currency": "NGN",
-        "amount": "100",
-        "redirect_url": "https://www.bongohive.co.zm",
-        "fullname": "Olufemi Obafunmiso",
-        "email": "olufemi@flw.com",
-        "phone_number": "0902620185",
-        "enckey": process.env.ENCRYPTION_KEY || "611d0eda25a3c931863d92c4",
-        "tx_ref": "MC-32444ee--4eerye4euee3rerds4423e43e" // This is a unique reference, unique to the particular transaction being carried out. It is generated when it is not provided by the merchant for every transaction.
+    "cvv": "564",
+    "expiry_month": "09",
+    "expiry_year": "21",
+    "currency": "NGN",
+    "amount": "100",
+    "redirect_url": "https://www.google.com",
+    "fullname": "Olufemi Obafunmiso",
+    "email": "olufemi@flw.com",
+    "phone_number": "0902620185",
+    "enckey": "611d0eda25a3c931863d92c4",
+    "tx_ref": "MC-32444ee--4eerye4euee3rerds4423e43e"// This is a unique reference, unique to the particular transaction being carried out. It is generated when it is not provided by the merchant for every transaction.
     
     }
     try {
